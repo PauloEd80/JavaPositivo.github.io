@@ -1,7 +1,3 @@
----
-layout: page
-title: Fundamentos da Linguagem Java e JVM
----
 
 # Fundamentos da Linguagem Java e JVM ☕
 
