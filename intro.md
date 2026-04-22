@@ -1,5 +1,5 @@
 
-# Aula 01 — Fundamentos da Linguagem Java e a JVM
+# Fundamentos da Linguagem Java e a JVM
 ---
 
 ## 🎯 Objetivos de Aprendizagem
