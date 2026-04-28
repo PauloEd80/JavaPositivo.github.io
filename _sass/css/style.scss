@@ -2,45 +2,43 @@
 ---
 @import "{{ site.theme }}";
 
-/* CONFIGURAÇÃO PARA COMPUTADORES (Telas largas)
-   Este bloco só será ativado em telas maiores que 1024px.
+/* FORÇAR LARGURA NO COMPUTADOR
+   O tema Minimal trava em ~640px. Aqui expandimos para 1150px.
 */
 @media screen and (min-width: 1024px) {
   .wrapper {
-    /* Aumentamos a largura de ~640px para 1150px */
-    max-width: 1150px; 
-    margin: 0 auto;
-    padding-left: 50px;
-    padding-right: 50px;
+    max-width: 1150px !important; 
+    margin: 0 auto !important;
+    display: flex !important;
+    justify-content: space-between !important;
   }
 
   section {
-    /* Dá mais espaço para os códigos Java aparecerem sem barra de rolagem */
-    width: 75%; 
-    float: right;
-    padding-bottom: 50px;
+    width: 75% !important; /* Espaço amplo para os códigos Java */
+    float: none !important;
+    padding-left: 40px !important;
   }
 
   header {
-    /* Ajusta a barra lateral com seu nome e descrição */
-    width: 20%; 
-    float: left;
-    position: sticky;
-    top: 40px;
+    width: 20% !important; /* Mantém o menu lateral proporcional */
+    float: none !important;
+    position: sticky !important;
+    top: 20px !important;
   }
 }
 
-/* MELHORIA PARA BLOCOS DE CÓDIGO
-   Garante que o código não quebre a linha de forma estranha e mantenha a fonte legível.
+/* MELHORIA VISUAL PARA CÓDIGOS (Markdown)
+   Isso evita que o código "vaze" ou fique com fontes ilegíveis.
 */
 pre, code {
-  font-family: "Consolas", "Monaco", "Courier New", monospace;
-  font-size: 0.95em;
-  background-color: #f8f9fa;
-  border-radius: 4px;
+  font-family: "Consolas", "Monaco", "Courier New", monospace !important;
+  font-size: 0.92em !important;
+  border-radius: 5px !important;
 }
 
-/* Permite rolagem horizontal suave em códigos muito extensos no computador */
+/* Permite que o aluno role o código lateralmente se a linha for muito longa */
 .highlight pre {
-  overflow-x: auto;
+  overflow-x: auto !important;
+  padding: 15px !important;
+  background-color: #f6f8fa !important;
 }
