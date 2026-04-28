@@ -2,27 +2,45 @@
 ---
 @import "{{ site.theme }}";
 
-/* Ajuste para telas de computador (Desktop) */
+/* CONFIGURAÇÃO PARA COMPUTADORES (Telas largas)
+   Este bloco só será ativado em telas maiores que 1024px.
+*/
 @media screen and (min-width: 1024px) {
   .wrapper {
-    max-width: 1080px; /* Isso expande a largura total do site no PC */
+    /* Aumentamos a largura de ~640px para 1150px */
+    max-width: 1150px; 
     margin: 0 auto;
+    padding-left: 50px;
+    padding-right: 50px;
   }
 
   section {
-    width: 72%; /* Aumenta a área do texto e códigos */
+    /* Dá mais espaço para os códigos Java aparecerem sem barra de rolagem */
+    width: 75%; 
     float: right;
+    padding-bottom: 50px;
   }
 
   header {
-    width: 23%; /* Ajusta a largura da barra lateral do professor */
+    /* Ajusta a barra lateral com seu nome e descrição */
+    width: 20%; 
     float: left;
+    position: sticky;
+    top: 40px;
   }
 }
 
-/* Garante que o código Java não "esprema" e use o espaço novo */
+/* MELHORIA PARA BLOCOS DE CÓDIGO
+   Garante que o código não quebre a linha de forma estranha e mantenha a fonte legível.
+*/
 pre, code {
-  word-wrap: normal;
-  white-space: pre; /* Mantém a formatação do Java original */
-  overflow-x: auto; /* Adiciona rolagem apenas se o código for MUITO longo */
+  font-family: "Consolas", "Monaco", "Courier New", monospace;
+  font-size: 0.95em;
+  background-color: #f8f9fa;
+  border-radius: 4px;
+}
+
+/* Permite rolagem horizontal suave em códigos muito extensos no computador */
+.highlight pre {
+  overflow-x: auto;
 }
