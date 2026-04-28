@@ -1,9 +1,10 @@
 title: Desenvolvimento de Software 2026/1
 description: Material de apoio e documentação da disciplina de Programação Orientada a Objetos (Java).
-theme: jekyll-theme-minimal
+remote_theme: jekyll-theme-minimal
 author: Prof. Paulo Eduardo Bueno
 show_downloads: true
 google_analytics:
-# Esta linha garante que o Jekyll procure seus estilos customizados
+
+# Configuração para que o motor Sass comprima o arquivo final
 sass:
   style: compressed
