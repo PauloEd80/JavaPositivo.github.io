@@ -4,3 +4,6 @@ theme: jekyll-theme-minimal
 author: Prof. Paulo Eduardo Bueno
 show_downloads: true
 google_analytics:
+# Esta linha garante que o Jekyll procure seus estilos customizados
+sass:
+  style: compressed
