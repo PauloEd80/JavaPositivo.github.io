@@ -48,21 +48,21 @@ O **Polimorfismo** resolve isso elegantemente: permite que uma **única variáve
 
 Antes da definição técnica, uma metáfora que você não vai mais esquecer.
 
-### A Metáfora do Volante (e do Cajado Mágico)
+### A Metáfora do Cetro Mágico
 
-Imagine que você é um mago com um **Cajado Universal**. Esse cajado possui sempre o mesmo gesto de ataque: você o ergue, pronuncia *"Invocar!"* e algo acontece.
+Imagine que você é um mago com um **Cetro Universal**. Esse cajado possui sempre o mesmo gesto de ataque: você o aponta, pronuncia *"Invocar!"* e algo acontece.
 
-O que acontece, porém, depende do **cristal encaixado** no cajado:
+O que acontece, porém, depende da **runa encaixado** no cetro:
 
-| Cristal no Cajado | Comando | Efeito |
+| Runa no Cetro | Comando | Efeito |
 |---|---|---|
-| Cristal de Fogo | `invocar()` | Bola de fogo explode no alvo |
-| Cristal de Gelo | `invocar()` | Raio congelante paralisa o inimigo |
-| Cristal de Cura | `invocar()` | Pulso de energia restaura pontos de vida |
+| Runa de Fogo | `invocar()` | Bola de fogo explode no alvo |
+| Runa de Gelo | `invocar()` | Raio congelante paralisa o inimigo |
+| Runa de Cura | `invocar()` | Pulso de energia restaura pontos de vida |
 
-O **gesto** (a interface) é sempre o mesmo. O **efeito** (a implementação) é específico de cada cristal. Você não precisa aprender um gesto diferente para cada tipo de magia — você simplesmente encaixa o cristal certo e usa o cajado.
+O **gesto** (a interface) é sempre o mesmo. O **efeito** (a implementação) é específico de cada runa. Você não precisa aprender um gesto diferente para cada tipo de magia — você simplesmente encaixa a runa certo e usa o cetro.
 
-Isso é exatamente o que acontece no volante de um carro: a **interface** (girar o volante para a direita) é idêntica em todos os modelos. A **implementação interna** pode ser direção hidráulica, elétrica ou mecânica — mas você, o motorista, não precisa saber qual está sendo usada. O comportamento correto acontece automaticamente.
+Isso é exatamente o que acontece, por exemplo, no volante de um carro: a **interface** (girar o volante para a direita) é idêntica em todos os modelos. A **implementação interna** pode ser direção hidráulica, elétrica ou mecânica — mas você, o motorista, não precisa saber qual está sendo usada. O comportamento correto acontece automaticamente.
 
 > 🎲 **Nota do Mestre:** Polimorfismo (do grego: *"muitas formas"*) é a qualidade que permite que uma **interface acesse uma classe geral de ações**. A ação específica e determinada para realizar é selecionada em tempo de execução de acordo com o tipo real do objeto.
 
