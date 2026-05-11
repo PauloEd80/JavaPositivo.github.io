@@ -18,7 +18,7 @@ O curso aborda a transição do pensamento estruturado para o orientado a objeto
 | **POO II** | Controladores de Acesso e Membros Estáticos | [Acessar](./aula05.md) |
 | **POO III** | Construtores e Herança | [Acessar](./aula06.md) |
 | **Pilar** | Polimorfismo: A Flexibilidade do Código | [Acessar](./aula08.md) |
-| **Pilar** | Abstração: Classes e Métodos Abstratos | [Aula 08](./aula08.md) |
+| **Pilar** | Abstração: Classes e Métodos Abstratos | [Aula 08](./aula16.md) |
 | **Contrato** | Interfaces: Definição de Protocolos | [Aula 09](./aula09.md) |
 | **Resiliência**| Tratamento de Exceções (Try/Catch) | [Aula 10](./aula10.md) |
 | **Arquivos** | Manipulação de Arquivos e JFileChooser | [Aula 11](#) |
